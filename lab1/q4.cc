@@ -23,5 +23,5 @@ void moveDisks(int n, const char* FROM, const char* VIA, const char* TO)
 	}
 	moveDisks(n - 1 , FROM, TO, VIA);	
 	cout << "Move disk from " << FROM << " to " << TO << "." << endl;
-	moveDisks(n - 1 , TO, VIA, FROM);
+	moveDisks(n - 1 , VIA, FROM, TO);
 }
